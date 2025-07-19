@@ -2,7 +2,7 @@ const projectData = [
   {
     id: 1,
     title: "Yummyano - Recipe Manager",
-    url: "", //
+    url: "https://youtu.be/7_vLvSEdM8w", //
     description:
       "A recipe management application built with the MERN stack. Yummyano features a fully functional admin panel to manage recipes, ingredients, and categories. The project is currently in development with more advanced features being added. All views are fully responsive.",
     video: "",
@@ -54,7 +54,7 @@ const projectData = [
   {
     id: 5,
     title: "Blogify - Blogging Platform",
-    url: "",
+    url: "https://blogify.kesug.com/",
     description:
       "A full-stack blogging platform built with HTML, CSS, and PHP. Includes a fully functional admin panel to manage blogs and categories. Users can create accounts, publish blogs, and browse content. The layout is fully responsive.",
     video: "",
@@ -67,7 +67,7 @@ const projectData = [
   {
     id: 6,
     title: "RotanaStar - Car Rental Website",
-    url: "",
+    url: "https://www.youtube.com/watch?v=65brhYRpXxA",
     description:
       "A car rental platform built for a real client using React.js, Tailwind CSS, and Strapi CMS for the backend. Users can browse and filter cars by brand, category, and subcategory. Fully responsive with pagination enabled where necessary.",
     video: "",
