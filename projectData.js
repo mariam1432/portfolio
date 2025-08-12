@@ -2,7 +2,7 @@ const projectData = [
   {
     id: 1,
     title: "Yummyano - Recipe Manager",
-    url: "https://youtu.be/7_vLvSEdM8w", //
+    // url: "https://youtu.be/7_vLvSEdM8w", //
     description:
       "A recipe management application built with the MERN stack. Yummyano features a fully functional admin panel to manage recipes, ingredients, and categories. The project is currently in development with more advanced features being added. All views are fully responsive.",
     video: "",
@@ -66,8 +66,8 @@ const projectData = [
   },
   {
     id: 6,
-    title: "RotanaStar - Car Rental Website",
-    url: "https://www.youtube.com/watch?v=65brhYRpXxA",
+    title: "ArabStar - Car Rental Website",
+    url: "https://arabstarcarrentals.com/",
     description:
       "A car rental platform built for a real client using React.js, Tailwind CSS, and Strapi CMS for the backend. Users can browse and filter cars by brand, category, and subcategory. Fully responsive with pagination enabled where necessary.",
     video: "",
