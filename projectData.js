@@ -2,11 +2,8 @@ const projectData = [
   {
     id: 1,
     title: "Yummyano - Recipe Manager",
-    // url: "https://youtu.be/7_vLvSEdM8w", //
     description:
-      "A recipe management application built with the MERN stack. Yummyano features a fully functional admin panel to manage recipes, ingredients, and categories. The project is currently in development with more advanced features being added. All views are fully responsive.",
-    video: "",
-    screenshots: [""], // Add URLs to screenshots
+      "A MERN stack recipe management app with an admin panel to create, update, and organize recipes, ingredients, and categories. Includes image uploads, category filtering, and responsive layouts for all devices. Currently adding advanced features like user authentication and personalized recipe collections.",
     techStack: ["MongoDB", "Express", "React", "Node.js"],
     clientProject: false,
     status: "In Progress",
@@ -17,9 +14,7 @@ const projectData = [
     title: "CamCrew - Production Company Landing Page",
     url: "https://mariam1432.github.io/camcrew/",
     description:
-      "A modern and animated landing page for a production company named CamCrew. Built using HTML, CSS, JavaScript, and GSAP to deliver smooth animations and an engaging user experience. The website is fully responsive across all screen sizes.",
-    video: "",
-    screenshots: [""],
+      "An animated, modern landing page for a production company using HTML, CSS, JavaScript, and GSAP. Features smooth scroll-triggered animations, layered image effects, and mobile-friendly design for an engaging user experience.",
     techStack: ["HTML", "CSS", "JavaScript", "GSAP"],
     clientProject: false,
     status: "Completed",
@@ -30,9 +25,7 @@ const projectData = [
     title: "Gourmet Haven - Restaurant Landing Page",
     url: "https://mariam1432.github.io/gourment-haven/",
     description:
-      "Landing page for a restaurant called Gourmet Haven. Designed using HTML, CSS, JavaScript, and jQuery for subtle animations. Fully responsive and optimized for all devices.",
-    video: "",
-    screenshots: [""],
+      "Restaurant landing page with a stylish menu section, image gallery, and smooth fade animations via jQuery. Optimized for performance and fully responsive to work on phones, tablets, and desktops.",
     techStack: ["HTML", "CSS", "JavaScript", "jQuery"],
     clientProject: false,
     status: "Completed",
@@ -43,9 +36,7 @@ const projectData = [
     title: "Luxury Homes - Real Estate Landing Page",
     url: "https://mariam1432.github.io/luxury-homes/",
     description:
-      "A clean and elegant landing page for a real estate agency called Luxury Homes. Created using HTML, CSS, JavaScript, and GSAP animations. The site is fully responsive and visually polished.",
-    video: "",
-    screenshots: [""],
+      "A clean real estate landing page with GSAP-based scroll animations, property showcase sections, and a responsive grid layout. Built for elegant presentation and mobile-friendly browsing.",
     techStack: ["HTML", "CSS", "JavaScript", "GSAP"],
     clientProject: false,
     status: "Completed",
@@ -56,9 +47,7 @@ const projectData = [
     title: "Blogify - Blogging Platform",
     url: "https://blogify.kesug.com/",
     description:
-      "A full-stack blogging platform built with HTML, CSS, and PHP. Includes a fully functional admin panel to manage blogs and categories. Users can create accounts, publish blogs, and browse content. The layout is fully responsive.",
-    video: "",
-    screenshots: [""],
+      "Full-stack blogging platform with user authentication, blog creation/editing, category management, and a searchable blog list. Features an admin panel for content moderation and a fully responsive front-end.",
     techStack: ["HTML", "CSS", "PHP", "MySQL"],
     clientProject: false,
     status: "Completed",
@@ -69,36 +58,36 @@ const projectData = [
     title: "ArabStar - Car Rental Website",
     url: "https://arabstarcarrentals.com/",
     description:
-      "A car rental platform built for a real client using React.js, Tailwind CSS, and Strapi CMS for the backend. Users can browse and filter cars by brand, category, and subcategory. Fully responsive with pagination enabled where necessary.",
-    video: "",
-    screenshots: [""],
+      "A production-ready car rental platform with dynamic filtering by brand, category, and subcategory. Built with React.js, Tailwind CSS, and Strapi CMS for easy content management. Includes responsive layouts, API integration, and optimized load performance.",
     techStack: ["React.js", "Tailwind CSS", "Strapi"],
     clientProject: true,
     status: "Completed",
     imgUrl: "./Rotanastar.PNG",
   },
+  {
+    id: 7,
+    title: "Urban Store - E-commerce Website",
+    url: "https://urban-store-seven.vercel.app/",
+    description:
+      "A fully responsive e-commerce store built with React, TypeScript, and Context API. Implements cart functionality, checkout logic, and dynamic product rendering. Optimized for performance and mobile-first shopping experiences.",
+    techStack: ["React", "TypeScript", "Context API", "Tailwind CSS"],
+    clientProject: false,
+    status: "Completed",
+    imgUrl: "./urbanstore.PNG",
+  },
 ];
+
 const skillsData = [
-  "HTML",
-  "CSS",
-  "Responsive Web Design",
-  "JavaScript",
-  "TypeScript",
-  "Jquery",
-  "ReactJs",
-  "NextJs",
-  "React Native",
-  "GSAP",
-  "TailwindCSS",
-  "Material UI",
+  "HTML, CSS & Responsive Design",
+  "JavaScript (ES6+), TypeScript",
+  "React.js (Web & Native), Next.js",
+  "TailwindCSS, Material UI, GSAP",
+  "Node.js, Express, REST APIs",
+  "MongoDB, MySQL",
   "Git & GitHub",
+  "Figma",
   "PHP (Basics)",
-  "MySQL",
-  "REST APIs",
-  "RTKQuery",
-  "MongoDB",
-  "Node.js / Express",
-  "Figma (Basics)",
+  "jQuery",
 ];
 document.addEventListener("DOMContentLoaded", function () {
   const bentoGrid = document.querySelector(".bento-grid");
@@ -106,9 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.error("Could not find bento-grid element");
     return;
   }
-  // Clear existing content (optional)
   bentoGrid.innerHTML = "";
-  // Generate project cards from data
   projectData.forEach((project) => {
     const projectCard = createProjectCard(project);
     projectCard.addEventListener("click", () => {
@@ -136,6 +123,7 @@ function createSkillTag(skill) {
   tag.innerHTML = `${skill}`;
   return tag;
 }
+
 function createProjectCard(project) {
   const card = document.createElement("div");
   card.className = "project-card"; // Only one class

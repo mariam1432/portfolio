@@ -85,7 +85,8 @@ document
 
     emailjs.sendForm("service_phnkskw", "template_y3c4rwm", e.target).then(
       function () {
-        formStatus.textContent = "Message sent successfully!";
+        formStatus.textContent =
+          "Thanks! Your message is on its way. I’ll get back to you shortly.";
         formStatus.style.color = "#4CAF50";
         e.target.reset();
 
@@ -94,7 +95,8 @@ document
         }, 5000);
       },
       function (error) {
-        formStatus.textContent = "Failed to send message";
+        formStatus.textContent =
+          "Something went wrong. Please try again or message me on LinkedIn.";
         formStatus.style.color = "#f44336";
         console.error("Full error:", error);
       }
