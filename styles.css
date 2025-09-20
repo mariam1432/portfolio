@@ -50,7 +50,7 @@ nav {
     letter-spacing: .08em;
     text-transform: uppercase;
     opacity: .8;
-    font-size: .85rem;
+    font-size: 1rem;
 }
 
 .logo img {
@@ -151,6 +151,7 @@ section {
     position: relative;
     text-align: center;
     min-height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -178,46 +179,20 @@ section {
     }
 }
 
-/* Add a pseudo-element to ensure full-width gradient */
-#hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(270deg,
-            rgba(245, 235, 220, 1),
-            rgba(255, 208, 98, 0.7),
-            rgba(245, 235, 220, 1));
-    background-size: 600% 600%;
-    animation: gradientShift 15s ease infinite;
-    z-index: -1;
-}
+
 
 .hero-content {
-    /* max-width: 800px;
-    margin: 0 auto; */
+    max-width: 800px;
+    margin: 0 auto;
     background: transparent;
-    padding: 2rem;
+    padding: 5rem 0 5rem 0;
     border-radius: 10px;
     position: relative;
     z-index: 2;
-    /* width: 90%; */
+    width: 90%;
 }
 
-.hero-content::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
-    border-radius: 10px;
-    z-index: -1;
-}
+
 
 .hero-name {
     font-size: 3.5rem;
@@ -512,6 +487,13 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .cta-button {
+
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+
+    }
+
     .hero-name {
         font-size: 2.5rem;
     }
@@ -552,8 +534,8 @@ footer {
     }
 
     .hero-content {
-        padding: 1.5rem;
-        /* width: 95%; */
+        padding: 8rem 0 8rem 0;
+        width: 95%;
     }
 
     .hero-name {
