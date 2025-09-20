@@ -2,10 +2,10 @@ const projectData = [
   {
     id: 6,
     title: "ArabStar - Car Rental Website",
-    url: "https://arabstarcarrentals.com/",
+    url: "https://car-rental-portfolio-kappa.vercel.app/",
     description:
-      "A production-ready car rental platform with dynamic filtering by brand, category, and subcategory. Built with React.js, Tailwind CSS, and Strapi CMS for easy content management. Includes responsive layouts, API integration, and optimized load performance.",
-    techStack: ["React.js", "Tailwind CSS", "Strapi"],
+      "A rental platform with dynamic filtering by brand, category, and subcategory. Built with React.js, Tailwind CSS.",
+    techStack: ["React.js", "Tailwind CSS"],
     clientProject: true,
     status: "Completed",
     imgUrl: "./Rotanastar.PNG",
