@@ -1,5 +1,27 @@
 const projectData = [
   {
+    id: 6,
+    title: "ArabStar - Car Rental Website",
+    url: "https://arabstarcarrentals.com/",
+    description:
+      "A production-ready car rental platform with dynamic filtering by brand, category, and subcategory. Built with React.js, Tailwind CSS, and Strapi CMS for easy content management. Includes responsive layouts, API integration, and optimized load performance.",
+    techStack: ["React.js", "Tailwind CSS", "Strapi"],
+    clientProject: true,
+    status: "Completed",
+    imgUrl: "./Rotanastar.PNG",
+  },
+  {
+    id: 7,
+    title: "Urban Store - E-commerce Website",
+    url: "https://urban-store-seven.vercel.app/",
+    description:
+      "A fully responsive e-commerce store built with React, TypeScript, and Context API. Implements cart functionality, checkout logic, and dynamic product rendering. Optimized for performance and mobile-first shopping experiences.",
+    techStack: ["React", "TypeScript", "Context API", "Tailwind CSS"],
+    clientProject: false,
+    status: "Completed",
+    imgUrl: "./urbanstore.PNG",
+  },
+  {
     id: 1,
     title: "Yummyano - Recipe Manager",
     description:
@@ -42,52 +64,30 @@ const projectData = [
     status: "Completed",
     imgUrl: "./LuxuryHomes.PNG",
   },
-  {
-    id: 5,
-    title: "Blogify - Blogging Platform",
-    url: "https://blogify.kesug.com/",
-    description:
-      "Full-stack blogging platform with user authentication, blog creation/editing, category management, and a searchable blog list. Features an admin panel for content moderation and a fully responsive front-end.",
-    techStack: ["HTML", "CSS", "PHP", "MySQL"],
-    clientProject: false,
-    status: "Completed",
-    imgUrl: "./Blogify.PNG",
-  },
-  {
-    id: 6,
-    title: "ArabStar - Car Rental Website",
-    url: "https://arabstarcarrentals.com/",
-    description:
-      "A production-ready car rental platform with dynamic filtering by brand, category, and subcategory. Built with React.js, Tailwind CSS, and Strapi CMS for easy content management. Includes responsive layouts, API integration, and optimized load performance.",
-    techStack: ["React.js", "Tailwind CSS", "Strapi"],
-    clientProject: true,
-    status: "Completed",
-    imgUrl: "./Rotanastar.PNG",
-  },
-  {
-    id: 7,
-    title: "Urban Store - E-commerce Website",
-    url: "https://urban-store-seven.vercel.app/",
-    description:
-      "A fully responsive e-commerce store built with React, TypeScript, and Context API. Implements cart functionality, checkout logic, and dynamic product rendering. Optimized for performance and mobile-first shopping experiences.",
-    techStack: ["React", "TypeScript", "Context API", "Tailwind CSS"],
-    clientProject: false,
-    status: "Completed",
-    imgUrl: "./urbanstore.PNG",
-  },
+  // {
+  //   id: 5,
+  //   title: "Blogify - Blogging Platform",
+  //   url: "https://blogify.kesug.com/",
+  //   description:
+  //     "Full-stack blogging platform with user authentication, blog creation/editing, category management, and a searchable blog list. Features an admin panel for content moderation and a fully responsive front-end.",
+  //   techStack: ["HTML", "CSS", "PHP", "MySQL"],
+  //   clientProject: false,
+  //   status: "Completed",
+  //   imgUrl: "./Blogify.PNG",
+  // },
 ];
 
 const skillsData = [
-  "HTML, CSS & Responsive Design",
+  "HTML5, CSS3 & Responsive Design",
   "JavaScript (ES6+), TypeScript",
-  "React.js (Web & Native), Next.js",
+  "React.js, Next.js",
+  "Redux, RTK Query, Context API",
   "TailwindCSS, Material UI, GSAP",
   "Node.js, Express, REST APIs",
-  "MongoDB, MySQL",
+  "MongoDB",
   "Git & GitHub",
-  "Figma",
-  "PHP (Basics)",
-  "jQuery",
+  "Figma (Basics)",
+  "Accessibility & SEO Optimization",
 ];
 document.addEventListener("DOMContentLoaded", function () {
   const bentoGrid = document.querySelector(".bento-grid");
